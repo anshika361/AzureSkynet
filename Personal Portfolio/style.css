@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.main {
+  height: 90vh;
+  width: 100vw;
+  background-color: rgba(240, 255, 255, 0.9);
+}
+
+.landing-main {
+  position: absolute;
+  height: 80vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(landing1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.name-main {
+  position: relative;
+  text-align: center;
+  top: 30%;
+  height: 45%;
+}
+
+.name-main h1 {
+  font-size: 80px;
+  color: rgba(240, 255, 255, 0.7);
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+.name-main p {
+  font-size: 25px;
+  color: rgba(240, 255, 255, 0.7);
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 10px;
+  margin-right: 4%;
+  letter-spacing: 2px;
+}
+span {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.what-you-are {
+  height: 70vh;
+  width: 100vw;
+  position: relative;
+  background-color: rgba(240, 255, 255, 0.9);
+}
+
+.what-info {
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin: 20px;
+  height: 60vh;
+  width: 50%;
+  left: 8%;
+}
+
+.what-info h3 {
+  padding: 10px;
+  font-size: 45px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 10%;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 4%;
+  border-bottom: 3px solid rgba(75, 149, 149, 0.7);
+  width: 62%;
+  transition: border-width 0.4s linear;
+}
+
+.what-info h3:hover {
+  border-width: 7px;
+  cursor: pointer;
+}
+
+.what-info .list {
+  position: relative;
+  padding: 10px;
+  top: 10%;
+  left: 10%;
+  height: 20vh;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.girl-img {
+  position: relative;
+  float: right;
+  display: inline-block;
+  margin: 20px;
+  right: 12%;
+  margin-top: 2%;
+}
+
+.girl-img img {
+  height: 400px;
+  width: 400px;
+}
+
+.qualification {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: rgba(240, 255, 255, 0.9);
+}
+.qualification .head h1 {
+  font-size: 45px;
+  position: relative;
+  font-family: sans-serif;
+  position: relative;
+  padding: 6px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  border-bottom: 3px solid rgba(75, 149, 149, 0.7);
+  transition: border-width 0.4s linear;
+  width: 18%;
+  margin: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.qualification .head h1:hover {
+  border-width: 7px;
+  cursor: pointer;
+}
+
+.experience {
+  display: inline-block;
+  float: left;
+  padding: 8px;
+  margin: 6%;
+  height: 80vh;
+  width: 50%;
+}
+
+.experience h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  position: relative;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  border-bottom: 1px solid rgba(75, 149, 149, 0.7);
+  width: 25%;
+  margin-bottom: 35px;
+}
+
+.experience h2,
+.education h2 {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.experience h3,
+.education h4 {
+  color: rgba(75, 149, 149, 0.7);
+  font-family: sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.experience p {
+  display: inline-block;
+  float: right;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.experience ul {
+  line-height: 35px;
+  padding: 10px;
+  list-style-position: inside;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.education {
+  display: inline-block;
+  float: right;
+  padding: 5px;
+  margin: 6%;
+  height: 30vh;
+  width: 24%;
+}
+
+.education h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  position: relative;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  border-bottom: 1px solid rgba(75, 149, 149, 0.7);
+  width: 50%;
+  margin-bottom: 35px;
+}
+
+.achievements {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: rgba(240, 255, 255, 0.9);
+}
+
+.achieve-head h1 {
+  font-size: 45px;
+  position: relative;
+  font-family: sans-serif;
+  position: relative;
+  padding: 6px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  border-bottom: 3px solid rgba(75, 149, 149, 0.7);
+  transition: border-width 0.4s linear;
+  width: 20%;
+  margin: 10px;
+  margin-left: 80px;
+  margin-top: 100px;
+}
+.achieve-head h1:hover {
+  border-width: 7px;
+  cursor: pointer;
+}
+
+.achievement-info {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  margin: 10px;
+  position: relative;
+  left: 2%;
+  top: 14%;
+  background-color: rgba(102, 175, 165, 0.112);
+  border-radius: 12px;
+}
+
+.achievement-info ul {
+  list-style: inside;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 40px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.certificates {
+  display: inline-block;
+  width: 70%;
+  height: 90vh;
+  float: right;
+  position: absolute;
+  margin: 10px;
+}
+
+.cert {
+  width: 28%;
+  height: 28%;
+  display: block;
+  position: absolute;
+  transition-duration: 0.4s;
+}
+
+.C-1 {
+  left: 4%;
+  top: 3%;
+}
+.C-2 {
+  top: 6%;
+  left: 36%;
+}
+
+.C-3 {
+  top: 40%;
+  left: 4%;
+}
+
+.C-4 {
+  top: 45%;
+  left: 35%;
+}
+
+.cert:hover {
+  transform: scale(1.25) translateY(-7px);
+  z-index: 20;
+  border: 5px solid rgba(107, 240, 222, 0.2);
+  offset: 10px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.contact-form {
+  background-image: linear-gradient(
+    to top,
+    rgba(137, 223, 212, 0.7),
+    rgba(106, 206, 191, 0.3)
+  );
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.form-container {
+  position: relative;
+  background-color: rgba(62, 137, 127, 0.6);
+  height: 80vh;
+  width: 40vw;
+  left: 6%;
+  top: 10%;
+  border-radius: 15px;
+}
+
+.form-content {
+  position: relative;
+  top: 6%;
+  height: 70vh;
+  left: 47%;
+  transform: translateX(-50%);
+}
+
+input:hover {
+  border: 2px solid rgba(106, 206, 191, 0.6);
+  box-shadow: 0 12px 30px rgba(107, 240, 222, 0.4);
+}
+textarea:hover {
+  border: 2px solid rgba(106, 206, 191, 0.6);
+  box-shadow: 0 12px 30px rgba(107, 240, 222, 0.4);
+}
+
+input,
+textarea,
+button {
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  padding: 10px;
+  top: 10%;
+  width: 40%;
+  margin: 20px;
+  border-radius: 5px;
+  border-style: none;
+  transition-duration: 0.3s;
+}
+
+input,
+textarea,
+button:focus {
+  outline: none;
+}
+
+textarea {
+  left: 50%;
+  width: 40%;
+}
+
+button {
+  width: 13%;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: rgba(222, 228, 228, 0.9);
+  color: black;
+  font-size: 14px;
+}
+
+button:hover {
+  border: 2px solid rgb(63, 121, 113);
+}
+
+.lets-connect {
+  position: absolute;
+  height: 40vh;
+  width: 40vh;
+  top: 30%;
+  right: 15%;
+  font-size: 42px;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  border-right: 3px solid rgb(63, 121, 113);
+  transition-duration: 0.3s;
+}
+
+.lets-connect:hover {
+  border-width: 5px;
+}
+
+.lets-connect h1 {
+  margin: 10px;
+  padding: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .what-info h3 {
+    font-size: 25px;
+  }
+  .what-info {
+    height: 40vh;
+    width: 80%;
+  }
+  .what-info ul {
+    font-size: 15px;
+  }
+  .qualification .head h1 {
+    font-size: 25px;
+    width: 42%;
+  }
+  .experience {
+    width: 80%;
+  }
+  .experience h1 {
+    font-size: 25px;
+    width: 50%;
+    left: 20%;
+  }
+
+  .education h1 {
+    position: absolute;
+    font-size: 25px;
+    left: 25%;
+    width: 43%;
+  }
+  .education h4 {
+    left: 30%;
+    position: absolute;
+    font-size: 15px;
+  }
+  .education h2 {
+    font-size: 15px;
+    margin-top: 50%;
+    margin-right: 0%;
+  }
+
+  .achieve-head h1 {
+    font-size: 25px;
+    width: 45%;
+  }
+
+  .lets-connect h1 {
+    font-size: 15px;
+    left: 60%;
+    position: relative;
+  }
+}
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: rgba(37, 86, 77, 0.3);
+}
+footer .text {
+  color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  float: left;
+  left: 2%;
+  top: 15%;
+  position: relative;
+}
+
+.social {
+  display: inline-block;
+  float: right;
+  right: 3%;
+  top: 10%;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.social .social-icon i {
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+}
